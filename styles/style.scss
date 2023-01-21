@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+.centralization {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+body {
+  background-color: rgb(182, 0, 0);
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.image {
+  img {
+    width: 400px;
+  }
+}
+.callToAction {
+    text-align: start;
+  h1 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+
+    color: #ffffff;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48px;
+
+    color: #ffffff;
+  }
+  button{
+    width: 120px;
+    height: 60px;
+    border-radius: 10px;
+    border: 0;
+    background: linear-gradient(90.07deg, #ffd900 2.12%, #ff5640 99.94%);
+  }
+}
