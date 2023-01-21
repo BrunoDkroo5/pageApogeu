@@ -16,6 +16,26 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  img{
+    width: 130px;
+  }
+  button{
+    width: 200px;
+    height: 40px;
+    color: rgb(71, 32, 0);
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: 10px;
+    border: 0;
+    background: linear-gradient(90.07deg, #ffd900 2.12%, #ff5640 99.94%);
+    cursor: pointer;
+  }
+  button:hover{
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid white;
+    transition: 0.3s;
+  }
 }
 .container {
   display: flex;
@@ -25,30 +45,81 @@ body {
 }
 .image {
   img {
-    width: 400px;
+    width: 500px;
   }
 }
 .callToAction {
-    text-align: start;
+    text-align: center;
   h1 {
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 48px;
-
-    color: #ffffff;
-  }
-  h2 {
     font-weight: 700;
     font-size: 30px;
     line-height: 48px;
 
     color: #ffffff;
   }
+  h2 {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 48px;
+
+    color: #ffffff;
+  }
   button{
-    width: 120px;
+    width: 250px;
     height: 60px;
+    color: rgb(71, 32, 0);
+    font-size: 20px;
+    font-weight: 900;
     border-radius: 10px;
     border: 0;
     background: linear-gradient(90.07deg, #ffd900 2.12%, #ff5640 99.94%);
+    cursor: pointer;
+  }
+  button:hover{
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid white;
+    transition: 0.3s;
+  }
+}
+@media screen and (max-width: 1320px){
+  .menu{
+    padding: 20px;
+  }
+  .container{
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 1058px){
+  .image{
+    img{
+      width: 300px;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .callToAction{
+    h1{
+      font-size: 25px;
+    }
+    h2{
+      font-size: 16px;
+    }
+  }
+  .logo{
+    button{
+      width: 120px;
+      height: 30px;
+      font-size: 12px;
+    }
+  }
+}
+@media screen and (max-width: 660px) {
+  .container{
+    flex-direction: column;
+  }
+  .image{
+    margin-top: 30px;
   }
 }
